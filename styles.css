@@ -1397,6 +1397,7 @@ html {
     border-radius: 12px;
     overflow: hidden;
     background: var(--bg-secondary);
+    height: 330px;
 }
 
 .media-item.large {

@@ -154,7 +154,7 @@ body {
 .section-title {
     font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     text-align: center;
     background: var(--gradient);
     -webkit-background-clip: text;
@@ -1198,13 +1198,6 @@ html {
     gap: 8px;
 }
 
-/* Tag Badge */
-.tag-badge {
-    height: 32px;
-    width: 80px;
-    background: #4393fc;
-    border-radius: 6px;
-}
 
 /* Card Title */
 .card-title {
@@ -1216,7 +1209,7 @@ html {
 /* Card Description */
 .card-description {
     font-size: 1rem;
-    line-height: 120%;
+    line-height: 150%;
     color: var(--text-secondary);
 }
 
@@ -2147,7 +2140,7 @@ html {
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 6rem;
     background: linear-gradient(45deg, var(--accent-color), #6eb4ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

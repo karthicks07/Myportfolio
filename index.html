@@ -48,10 +48,10 @@
                     <div class="about-visual">
                         <div class="profile-wrapper">
                             <img src="images/pic.jpg" alt="Profile" class="profile-image">
-                            <div class="experience-badge">
-                                <span class="years">6+</span>
+                          <div class="experience-badge">
+                                <span id="experience-months" class="years"></span>
                                 <span class="text">Months<br>Experience</span>
-                            </div>
+                          </div>
                         </div>
                         
                         <div class="stats-grid">
@@ -644,5 +644,22 @@
         duration: 0    // No animation duration
       });
     </script>
+    <script>
+          const startDate = new Date("2024-07-08");
+        
+          const today = new Date();
+          let months;
+          months = (today.getFullYear() - startDate.getFullYear()) * 12;
+          months -= startDate.getMonth();
+          months += today.getMonth();
+          if (today.getDate() < startDate.getDate()) {
+            months--;
+          }
+          months = Math.max(0, months);
+          const display = document.getElementById("experience-months");
+          if (display) {
+            display.textContent = months + "+";
+          }
+</script>
 </body>
 </html>

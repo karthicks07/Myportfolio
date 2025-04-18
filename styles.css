@@ -2274,3 +2274,48 @@ html {
         bottom: 1rem;
     }
 }
+
+.neon-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #003366,
+        0 0 30px #003366,
+        0 0 40px #003366,
+        0 0 55px #003366,
+        0 0 75px #003366,
+        0 0 90px #003366,
+        0 0 100px #003366;
+    animation: neonPulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonPulse {
+    from {
+        text-shadow: 
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #003366,
+            0 0 30px #003366,
+            0 0 40px #003366,
+            0 0 55px #003366,
+            0 0 75px #003366,
+            0 0 90px #003366,
+            0 0 100px #003366;
+    }
+    to {
+        text-shadow: 
+            0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 30px #003366,
+            0 0 40px #003366,
+            0 0 50px #003366,
+            0 0 60px #003366,
+            0 0 70px #003366,
+            0 0 80px #003366,
+            0 0 90px #003366;
+    }
+}
